@@ -1,0 +1,141 @@
+set header_cache = "~/.neomutt/cache/headers"
+set message_cachedir = "~/.neomutt/cache/bodies"
+set certificate_file = "~/.neomutt/certificates"
+
+# Automatically view HTML as text
+auto_view text/html
+
+# Prefer plain text over html if both are available
+alternative_order text/plain text/enriched text/html 
+
+# ----------------------------------------------------------------------------
+# VARIABLE SETTINGS
+# ----------------------------------------------------------------------------
+
+# Abort if attachment is mentioned but not included
+set abort_noattach = "ask-yes"		     
+set alias_file = ~/.neomutt/aliases
+source ~/.neomutt/aliases
+set attach_save_dir = ~/Downloads/
+set beep = no
+
+# <change-folder> function starts at next mailbox instead of first
+set change_folder_next = yes
+
+# Don't save copy of sent mail. IMAP server already does this
+set copy = no
+
+# Need to set tw to zero here because autocmd was not working
+set editor="vim +':set textwidth=0'"
+
+# Move to trash without confirmation
+set delete = yes
+
+# Skip some prompts when replying
+set fast_reply = yes
+
+# Can't delete flagged messages
+set flag_safe = yes
+
+# Disable help bar
+set help = no
+
+# Include copy of message in replies
+set include = yes
+set mailcap_path = ~/.config/neomutt/mailcap
+
+# How often to check for mail in seconds
+set mail_check = 60
+
+# Remove '+' on wrapped lines
+set markers = no
+
+# Bottom entry will not scroll up screen
+set menu_move_off = no
+
+# Instead of redrawing screen at bottom with all new entries, redraw after 
+# scroll by one line
+set menu_scroll = yes
+
+# Forward according to MIME standard
+# set mime_forward = yes
+
+# When moving to next page how many lines of previous context to repeat
+set pager_context = 2
+
+# Number of lines in mini-index in pager
+set pager_index_lines = 8
+
+# Do not move to next messsage when scrolling past bottom of message
+set pager_stop = yes
+
+# Display emails from alias as name you've defined
+set reverse_alias = yes
+
+# Common sense side bar
+set sidebar_folder_indent = yes
+set sidebar_short_path = yes
+set sidebar_width = 30 
+# set sidebar_visible = yes
+set sort = "reverse-date"
+
+set ssl_force_tls = yes
+
+# How long neomutt will block waiting for input 
+set timeout = 15
+
+#text wrap
+set wrap = 78
+
+# Consider:
+# set crypt_autosign = yes # auto sign outgoing w pgp. auth and integrity
+set imap_keepalive = 60 # Reduce if being disconnected by server
+# set narrow_tree = yes # For threads
+# set new_mail_command <command> # call this command after new mail received
+#     (for notifcations maybe?)
+# set signature <filename> # auto append signature in this file "Sincerely..."
+# set text_flowed = yes # Formatting text, needs vim support
+ 
+# ----------------------------------------------------------------------------
+# HEADER/CUSTOM FORMATS
+# ----------------------------------------------------------------------------
+
+set sidebar_format = "%D%* %?N?%N?"
+set index_format = "%4C %Z %{%b %d} %-25.25L | %s"
+
+# ----------------------------------------------------------------------------
+# BINDINGS
+# ----------------------------------------------------------------------------
+
+# Vi-like Movement
+bind index,pager g noop
+bind index gg first-entry
+bind index G last-entry
+bind pager gg top
+bind pager G bottom
+bind index,pager ] next-new-then-unread
+bind index,pager [ previous-new-then-unread
+bind pager j next-line
+bind pager k previous-line
+bind pager J next-undeleted
+bind pager K previous-undeleted
+bind index,pager \cd half-down
+bind index,pager \cu half-up
+
+# Mail specific
+bind index,pager R group-reply
+bind index V collapse-thread
+
+# Sidebar bindings
+bind index,pager \cj sidebar-next
+bind index,pager \ck sidebar-prev
+bind index,pager \co sidebar-open
+bind index,pager \cH sidebar-page-up
+bind index,pager \cL sidebar-page-down
+bind index,pager \cb sidebar-toggle-visible
+
+# ----------------------------------------------------------------------------
+# COLOUR
+# ----------------------------------------------------------------------------
+
+source ~/.config/neomutt/nord_theme
