@@ -14,7 +14,7 @@ set postponed = "+Drafts"
 # set record = "+Sent"
 set trash = "+Trash"
 
-mailboxes ! +Sent +Drafts "+Junk Email" +Archive 
+mailboxes ! +"Sent Items" +Drafts "+Junk Email" +Archive 
 
 set smtp_url = "smtp://$imap_user@outlook.office365.com:587/"
 set smtp_pass = $my_school_pass
