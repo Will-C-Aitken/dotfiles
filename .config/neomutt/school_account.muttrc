@@ -22,3 +22,6 @@ set smtp_pass = $my_school_pass
 # Notifications
 set new_mail_command = 'notify-send -a "NeoMutt" \
  "New Mail in School Account" "%n new messages" &'
+
+# set sidebar for fullscreen school
+set sidebar_visible = yes

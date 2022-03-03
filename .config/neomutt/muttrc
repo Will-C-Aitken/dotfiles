@@ -76,7 +76,6 @@ set reverse_alias = yes
 set sidebar_folder_indent = yes
 set sidebar_short_path = yes
 set sidebar_width = 30 
-# set sidebar_visible = yes
 set sort = "reverse-date"
 
 set ssl_force_tls = yes
