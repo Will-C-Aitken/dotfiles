@@ -2,6 +2,11 @@
 source ~/.config/neomutt/muttrc
 source "gpg -dq ~/.config/neomutt/passwords.gpg |"
 
+set imap_authenticators = "xoauth2"
+set imap_oauth_refresh_command = "python3 ~/.neomutt/mutt_oauth2.py ~/.neomutt/tokens"
+set smtp_authenticators = ${imap_authenticators}
+set smtp_oauth_refresh_command = ${imap_oauth_refresh_command}
+
 set imap_user = '16wca@queensu.ca'
 set imap_pass = $my_school_pass
 set from = $imap_user
