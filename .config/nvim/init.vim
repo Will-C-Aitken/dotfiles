@@ -22,7 +22,7 @@ autocmd FileType tex setlocal spell spelllang=en_ca
 autocmd BufRead /tmp/neomutt-* setlocal spell spelllang=en_ca
 
 " Markdown Specific
-autocmd FileType md setlocal spell spelllang=en_ca
+autocmd FileType markdown setlocal spell spelllang=en_ca
 
 
 " Plugins
