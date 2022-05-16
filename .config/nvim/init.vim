@@ -21,6 +21,10 @@ autocmd FileType tex setlocal spell spelllang=en_ca
 " Mail Specific
 autocmd BufRead /tmp/neomutt-* setlocal spell spelllang=en_ca
 
+" Markdown Specific
+autocmd FileType md setlocal spell spelllang=en_ca
+
+
 " Plugins
 call plug#begin(stdpath('data').'/plugged')
 
@@ -32,6 +36,9 @@ let g:vimtex_compiler_latekmk = {'build_dir' : 'build'}
 
 " Nord Theme
 Plug 'arcticicestudio/nord-vim'
+
+" Markdown
+Plug 'preservim/vim-markdown'
 
 call plug#end()
 
