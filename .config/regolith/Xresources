@@ -30,6 +30,6 @@ i3-wm.client.unfocused.color.child_border: #3B4252
 i3-wm.window.border.size: 2
  
 ! i3 Thicken Gaps
-i3-wm.gaps.inner.size: 30
+i3-wm.gaps.inner.size: 15
 i3-wm.gaps.outer.size: 0
 
