@@ -13,8 +13,8 @@ gnome.terminal.update: false
 
 ! i3 bar nord theme
 i3-wm.bar.background.color: #2E3440
-i3-wm.bar.workspace.focused.border.color: #8FBCBB
-i3-wm.bar.workspace.focused.background.color: #8FBCBB
+i3-wm.bar.workspace.focused.border.color: #81A1C1
+i3-wm.bar.workspace.focused.background.color: #81A1C1
 i3-wm.bar.workspace.active.background.color: #ECEFF4
 i3-wm.bar.workspace.active.border.color: #ECEFF4
 i3xrocks.value.color: #ECEFF4
