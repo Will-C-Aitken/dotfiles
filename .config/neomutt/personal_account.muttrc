@@ -12,9 +12,9 @@ set folder = "imaps://outlook.office365.com:993/"
 set spoolfile ="+Inbox"
 set postponed = "+Drafts"
 # set record = "+Sent"
-set trash = "+Trash"
+set trash = "+Deleted"
 
-mailboxes ! +Sent +Drafts +Junk +Archive 
+mailboxes ! +Sent +Drafts +Junk +Deleted +Archive 
 
 set smtp_url = "smtp://$imap_user@smtp-mail.outlook.com:587" 
 set smtp_pass = $my_personal_pass
@@ -22,3 +22,5 @@ set smtp_pass = $my_personal_pass
 # Notifications
 set new_mail_command = 'notify-send -a "NeoMutt" \
  "New Mail in Personal Account" "%n new messages" &'
+
+set signature = "~/.config/neomutt/personal_sig"

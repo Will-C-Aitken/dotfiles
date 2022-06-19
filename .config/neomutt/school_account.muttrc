@@ -17,9 +17,9 @@ set folder = "imaps://outlook.office365.com/"
 set spoolfile ="+Inbox"
 set postponed = "+Drafts"
 # set record = "+Sent"
-set trash = "+Trash"
+set trash = "+Deleted Items"
 
-mailboxes ! +"Sent Items" +Drafts "+Junk Email" +Archive 
+mailboxes ! +"Sent Items" +Drafts "+Junk Email" +"Deleted Items" +Archive 
 
 set smtp_url = "smtp://$imap_user@outlook.office365.com:587/"
 set smtp_pass = $my_school_pass
@@ -30,3 +30,5 @@ set new_mail_command = 'notify-send -a "NeoMutt" \
 
 # set sidebar for fullscreen school
 set sidebar_visible = yes
+
+set signature = "~/.config/neomutt/school_sig"

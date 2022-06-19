@@ -81,14 +81,14 @@ set sort = "reverse-date"
 set ssl_force_tls = yes
 
 # How long neomutt will block waiting for input 
-set timeout = 15
+set timeout = 5
 
 #text wrap
 set wrap = 78
 
 # Consider:
 # set crypt_autosign = yes # auto sign outgoing w pgp. auth and integrity
-set imap_keepalive = 60 # Reduce if being disconnected by server
+set imap_keepalive = 5 # Reduce if being disconnected by server
 # set narrow_tree = yes # For threads
 # set new_mail_command <command> # call this command after new mail received
 #     (for notifcations maybe?)
