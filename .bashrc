@@ -122,3 +122,5 @@ set -o vi
 
 # For using git to track dotfiles
 alias dotfiles='/usr/bin/git --git-dir=/home/will/.dotfiles/ --work-tree=/home/will'
+export PATH=$PATH:/home/will/.spicetify
+export MANPAGER='nvim +Man!'

@@ -437,9 +437,9 @@ set_from_resource $i3-wm.program.files i3-wm.program.files /usr/bin/nautilus --n
 bindsym $mod+$i3-wm.binding.files exec $i3-wm.program.files
 
 ## Launch // Notification Viewer // <> n ##
-set_from_resource $i3-wm.binding.notification_ui i3-wm.binding.notification_ui n
-set_from_resource $i3-wm.program.notification_ui i3-wm.program.notification_ui /usr/bin/rofication-gui
-bindsym $mod+$i3-wm.binding.notification_ui exec $i3-wm.program.notification_ui
+# set_from_resource $i3-wm.binding.notification_ui i3-wm.binding.notification_ui n
+# set_from_resource $i3-wm.program.notification_ui i3-wm.program.notification_ui /usr/bin/rofication-gui
+# bindsym $mod+$i3-wm.binding.notification_ui exec $i3-wm.program.notification_ui
 
 ###############################################################################
 # Workspace Management
@@ -616,7 +616,7 @@ set_from_resource $i3-wm.bar.stripworkspacenumbers i3-wm.bar.stripworkspacenumbe
 set_from_resource $i3-wm.bar.mode i3-wm.bar.mode dock
 
 # i3xrocks config file. Override this for a custom status bar generator.
-set_from_resource $i3-wm.bar.status_command i3-wm.bar.status_command i3xrocks -u ~/.config/regolith/i3xrocks/conf.d -d /etc/regolith/i3xrocks/conf.d
+set_from_resource $i3-wm.bar.status_command i3-wm.bar.status_command i3xrocks -u ~/.config/regolith/i3xrocks/conf.d # -d /etc/regolith/i3xrocks/conf.d
 
 # The bar configuration
 bar {
@@ -650,7 +650,7 @@ set_from_resource $i3-wm.program.compositor i3-wm.program.compositor /usr/share/
 exec_always --no-startup-id $i3-wm.program.compositor
 
 # Start Rofication for notifications
-set_from_resource $i3-wm.program.notifications i3-wm.program.notifications /usr/bin/rofication-daemon
+set_from_resource $i3-wm.program.notifications i3-wm.program.notifications /usr/bin/dunst
 exec --no-startup-id $i3-wm.program.notifications
 
 # Launch first time user experience script
@@ -691,5 +691,5 @@ bindsym $mod+m workspace $ws9; exec gnome-terminal -- neomutt -F ~/.config/neomu
 bindsym $mod+Shift+m workspace $ws8; exec gnome-terminal -- neomutt -F ~/.config/neomutt/school_account.muttrc
 
 # spotify
-bindsym $mod+u workspace $ws10; exec /snap/bin/spotify --force-device-scale-factor=2.7 %U
+bindsym $mod+u workspace $ws10; exec /usr/bin/spotify --force-device-scale-factor=2.2 %U
 
