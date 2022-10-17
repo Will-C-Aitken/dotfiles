@@ -9,7 +9,7 @@ set smtp_oauth_refresh_command = ${imap_oauth_refresh_command}
 
 set imap_user = '16wca@queensu.ca'
 set imap_pass = $my_school_pass
-set from = $imap_user
+set from = 'will.aitken@queensu.ca'
 set use_from = yes
 
 set realname = 'Will Aitken'
