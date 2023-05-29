@@ -41,7 +41,7 @@ set flag_safe = yes
 set help = no
 
 # Include copy of message in replies
-set include = no
+set include = yes
 set mailcap_path = ~/.config/neomutt/mailcap
 
 # How often to check for mail in seconds
