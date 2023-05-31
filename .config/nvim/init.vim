@@ -34,9 +34,24 @@ autocmd FileType markdown setlocal spell spelllang=en_ca
 
 
 " For JSON survey data
-autocmd BufRead survey.json let @p = 'A,{"number" : ,"title €kb" : ,€kb"",:lin€kb€kb€kb€kb:l€kb€kb"link" : "","affiliations" : [],"a€kbtype" : "","re-ran_results"€kb:€kb?" ,"dr€kbkjbbhi "€kb"€kb:jbbbwjcwdatasets" [],Okwwi: jjjkkddo €kb"basemodel" : {€kb,"€kb"humans" : ,"signficance"€kb€kb€kb€kb€kb€kb€kb€kbificance" : ,"code" : ,€kb€kb}kkkkkkkkkkkkkkkjwwwwll'
 
-autocmd BufRead *survey.json let @t = 'A,{"name" : ::€kb€kb"",:€kb"link" "€kb: "","metrics" []\\€kb€kb,€kb€kbi: A{:na€kb€kb€kb"name" : a€kb"",:€kb"prior_best""€kb : ,€kb	:€kb{"name" : "","affia€kbliations" €kb: €kb€kb : []"link" : ""kA,jao€kb"€kb},:€kb"€kb€kb"old_score" : ,:no€kb€kb€kb"new_score",€kb : ,"higher_is_better" : €kb€kb}]}16k$h'
+" Insert paper template
+autocmd BufRead survey.json let @p = 'A,{"number" : ,"title €kb" : ,€kb"",:lin€kb€kb€kb€kb:l€kb€kb"link" : "","affiliations" : [],"a€kbtype" : "","re-ran_results"€kb:€kb?" ,"dr€kbkjbbhi "€kb"€kb:jbbbwjcwdatasets" [],Okwwi: jjjkkddo €kb"basemodel" : {€kb,"€kb"humans" : ,"signficance"€kb€kb€kb€kb€kb€kb€kb€kbificance" : ,"code" : ,€kb€kb}kkkkkkkkkkkkkkkjwwwwlljjjjjjjjjwwi{€kb€kb€kb€kb€kb€kb[€kb]€kb€kb€kb€kb€kb €kb{"Name"€kb€kb€kb€kb€kbname" :"link€kb€kb€kb€kblink:€kb" :"affiliationskkA ""jkA,jA "",jlli" : []lxo}],kkkkkkkkk:tabe €kb€kb€kb€kb€kb€kbkjo{"name" : "","link" : :€kb"","affiliations" : []m€kb,"metrics" : [{"name" : "","split" : "","prior_nest"€kb€kb€kb€kb€kbbest+€kb",€kb :{€kb	{"name" : "","link" : "","affiliations" "€kb: [],€kb},€kb"new_best" : "",:€kb"il€kb€kbold_score" : €kb ,"noew_s€kb€kb€kb€kb€kbew_score" : ,"higher_is_better" ,€kb€kb€kb€kb€kb€kb€kb€kb€kb:€kb€kb€kb€kb€kb€kb€kb€kb ,:€kb"cope€kbied_old_so€kbcore" : €kb},x€kb€kb]}],jjjjkkkddkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkwwwww'
+
+" Insert datasets template
+autocmd bufRead survey.json let @d = 'A,{"name" : ::€kb€kb"",:€kb"link" "€kb: "","metrics" []\\€kb€kb,€kb€kbi: A{:na€kb€kb€kb"name" : a€kb"",:€kb"prior_best""€kb : ,€kb	:€kb{"name" : "","affia€kbliations" €kb: €kb€kb : []"link" : ""kA,jao€kb"€kb},:€kb"€kb€kb"old_score" : ,:no€kb€kb€kb"new_score",€kb : ,"higher_is_better" : €kb€kb}]}16k$hjo"affiliations:€kb" : [],jjjo"split" : "",jjjjddpkA,j$xjjjjjjjjjjjjjjjkkkkkkkkkkkkkkjO"€kb€kb"new)€kb_best" : "",jjjA ,"copied_old_score" :kkkkkkkkkkkkkkkkkh'
+
+" Insert metric template
+autocmd BufRead survey.json let @m = 'A,{"name" : "","split" : "","prior_best" :	{"name" : "",:€kb:€kb"link":€kb : "","afiliations" €kb€kb€kb€kb€kb€kb€kb€kb€kb€kb€kbfiliations "€kb€kb" : "€kb[],€kb}€kb"new_best" : "","old_scorekka,jjA" : ,"new_score" : ,"copied_old_score" : ,ko"hug€kb€kbigher_is_better" :,€kb ,jxjko€kb}kkkkkkkkkkkkkwwwwwwbl'
+
+" Insert basemodel template
+autocmd BufRead survey.json let @b = 'a,{"name" : "","link" : "","affiliations" " €kb€kb: []}kkkkwwwwlll'
+
+" Format affiliations
+autocmd BufRead *survey.json let @a = ':s/[€kb\([Ai€kb-Z]\)/"\q"€kb€kb1", /ge:s/, ]"/], "/ge:s/, ]/]/ge:s/\]\[/], [/gej$F"'
+
+" Copy previous block
+autocmd BufRead *survey.json let @c = 'V%y%pka,jjk'
 
 " Plugins
 call plug#begin(stdpath('data').'/plugged')
