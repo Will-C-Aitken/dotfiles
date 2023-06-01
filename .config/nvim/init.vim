@@ -34,6 +34,7 @@ autocmd FileType markdown setlocal spell spelllang=en_ca
 
 
 " For JSON survey data
+autocmd BufRead survey.json setlocal spell spelllang=en_ca
 
 " Insert paper template
 autocmd BufRead survey.json let @p = 'A,{"number" : ,"title €kb" : ,€kb"",:lin€kb€kb€kb€kb:l€kb€kb"link" : "","affiliations" : [],"a€kbtype" : "","re-ran_results"€kb:€kb?" ,"dr€kbkjbbhi "€kb"€kb:jbbbwjcwdatasets" [],Okwwi: jjjkkddo €kb"basemodel" : {€kb,"€kb"humans" : ,"signficance"€kb€kb€kb€kb€kb€kb€kb€kbificance" : ,"code" : ,€kb€kb}kkkkkkkkkkkkkkkjwwwwlljjjjjjjjjwwi{€kb€kb€kb€kb€kb€kb[€kb]€kb€kb€kb€kb€kb €kb{"Name"€kb€kb€kb€kb€kbname" :"link€kb€kb€kb€kblink:€kb" :"affiliationskkA ""jkA,jA "",jlli" : []lxo}],kkkkkkkkk:tabe €kb€kb€kb€kb€kb€kbkjo{"name" : "","link" : :€kb"","affiliations" : []m€kb,"metrics" : [{"name" : "","split" : "","prior_nest"€kb€kb€kb€kb€kbbest+€kb",€kb :{€kb	{"name" : "","link" : "","affiliations" "€kb: [],€kb},€kb"new_best" : "",:€kb"il€kb€kbold_score" : €kb ,"noew_s€kb€kb€kb€kb€kbew_score" : ,"higher_is_better" ,€kb€kb€kb€kb€kb€kb€kb€kb€kb:€kb€kb€kb€kb€kb€kb€kb€kb ,:€kb"cope€kbied_old_so€kbcore" : €kb},x€kb€kb]}],jjjjkkkddkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkwwwww'
