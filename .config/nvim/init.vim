@@ -33,6 +33,9 @@ autocmd BufRead /tmp/neomutt-* setlocal spell spelllang=en_ca
 autocmd FileType markdown setlocal spell spelllang=en_ca
 
 
+" For Budgurse unit test
+autocmd Bufread,BufNewFile */budgurse/test/*.c let @i = ':,€kb.,$/€kbg/num_nodes€kb€kb€kb€kb€kb€kb€kb€kb€kbtest_nodes€kb€kb€kb€kb€kb€kb€kb€kb€kb€kbentry_€kb€kb€kb€kb€kb€kb*€kb.*mu_aser€kb€kbsert/norm€ku€kd $F w'
+
 " For JSON survey data
 autocmd BufRead survey.json setlocal spell spelllang=en_ca
 
