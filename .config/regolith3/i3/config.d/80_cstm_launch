@@ -1,0 +1,13 @@
+# calcurse
+bindsym $mod+Shift+u workspace $ws9; exec gnome-terminal -- calcurse
+
+# mail+calcurse
+bindsym $mod+p workspace $ws9; exec gnome-terminal -- neomutt -F ~/.config/neomutt/personal_account.muttrc; exec gnome-terminal -- calcurse
+
+# mail
+bindsym $mod+m workspace $ws9; exec gnome-terminal -- neomutt -F ~/.config/neomutt/personal_account.muttrc
+
+# spotify
+bindsym $mod+u workspace $ws10; exec /usr/bin/spotify 
+
+
