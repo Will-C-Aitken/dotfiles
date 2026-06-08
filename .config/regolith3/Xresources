@@ -3,6 +3,10 @@ rofi.dpi: 192
 Xft.dpi: 192
 Xcursor.size: 48
 
+! Change super key to alt
+wm.mod: Mod1
+wm.alt: Mod4
+
 ! i3 lock screen
 ! echo "wm.program.lock: /usr/bin/i3lock" >> ~/.config/regolith/xresources
 
@@ -59,9 +63,9 @@ wm.workspace.19.name: 19
 wm.gaps.inner.size: 20
 wm.gaps.outer.size: 0
 
-!regolith.wallpaper.file: /home/will/.local/share/backgrounds/2024-11-02-08-12-20-nord-dark.png
-!regolith.lockscreen.wallpaper.file: /home/will/.local/share/backgrounds/2024-11-02-08-12-20-nord-dark.png
-regolith.wallpaper.file: /home/will/.local/share/backgrounds/2024-11-02-08-17-28-nord-regolith2-noText-GMFranceschini.svg
-regolith.lockscreen.wallpaper.file: /home/will/.local/share/backgrounds/2024-11-02-08-17-28-nord-regolith2-noText-GMFranceschini.svg
-!regolith.look.path: /usr/share/regolith-look/default
+!regolith.look.path: /usr/share/regolith-look/nord
 regolith.look.path: /usr/share/regolith-look/nord
+!regolith.wallpaper.file: /home/will/.local/share/backgrounds/2025-04-22-14-17-13-nord.jpg
+!regolith.lockscreen.wallpaper.file: /home/will/.local/share/backgrounds/2025-04-22-14-17-13-nord.jpg
+regolith.wallpaper.file: /home/will/.local/share/backgrounds/2025-04-22-14-18-56-nord.jpg
+regolith.lockscreen.wallpaper.file: /home/will/.local/share/backgrounds/2025-04-22-14-18-56-nord.jpg
