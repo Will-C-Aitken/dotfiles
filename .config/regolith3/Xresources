@@ -6,6 +6,7 @@ Xcursor.size: 48
 ! Change super key to alt
 wm.mod: Mod1
 wm.alt: Mod4
+wm.carry_container_to_ws_key: Mod4
 
 ! i3 lock screen
 ! echo "wm.program.lock: /usr/bin/i3lock" >> ~/.config/regolith/xresources
