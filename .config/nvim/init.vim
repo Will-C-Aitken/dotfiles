@@ -76,4 +76,21 @@ let g:vim_markdown_folding_disabled = 1
 
 call plug#end()
 
+" 1. Enable true-color mode so Neovim understands your custom hex codes
+set termguicolors
+
+augroup NordCustomizations
+  autocmd!
+  " 2. Make comments a softer, authentic Nord gray (Nord4) using hex
+  autocmd ColorScheme nord highlight Comment guifg=#6a7894 gui=italic
+
+  " 3. STRIP AWAY the background color to restore your terminal's transparency
+  autocmd ColorScheme nord highlight Normal guibg=NONE
+  autocmd ColorScheme nord highlight NonText guibg=NONE
+  autocmd ColorScheme nord highlight SignColumn guibg=NONE
+  autocmd ColorScheme nord highlight LineNr guibg=NONE
+augroup END
+
+" 4. Load your colorscheme after defining the rules
 colorscheme nord
+
