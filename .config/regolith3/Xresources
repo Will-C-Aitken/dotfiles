@@ -64,9 +64,9 @@ wm.workspace.19.name: 19
 wm.gaps.inner.size: 20
 wm.gaps.outer.size: 0
 
-!regolith.look.path: /usr/share/regolith-look/nord
+regolith.wallpaper.file: ~/Pictures/wallpapers/nord.jpg
+regolith.lockscreen.wallpaper.file: ~/Pictures/wallpapers/nord.jpg
+!regolith.look.path: /usr/share/regolith-look/default
 regolith.look.path: /usr/share/regolith-look/nord
-!regolith.wallpaper.file: /home/will/.local/share/backgrounds/2025-04-22-14-17-13-nord.jpg
-!regolith.lockscreen.wallpaper.file: /home/will/.local/share/backgrounds/2025-04-22-14-17-13-nord.jpg
-regolith.wallpaper.file: /home/will/.local/share/backgrounds/2025-04-22-14-18-56-nord.jpg
-regolith.lockscreen.wallpaper.file: /home/will/.local/share/backgrounds/2025-04-22-14-18-56-nord.jpg
+
+wm.bar.trayoutput: none
